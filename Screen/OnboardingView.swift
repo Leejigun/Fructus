@@ -27,5 +27,6 @@ struct OnboardingView: View {
 struct OnbordingView_Previews: PreviewProvider {
     static var previews: some View {
         OnboardingView()
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

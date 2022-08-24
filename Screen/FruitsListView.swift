@@ -35,6 +35,7 @@ struct FruitsListView: View {
                 }
             }
         } //: NavigationView
+        .navigationViewStyle(.stack)
     }
 }
 
