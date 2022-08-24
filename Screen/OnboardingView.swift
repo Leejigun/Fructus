@@ -8,14 +8,14 @@
 import SwiftUI
 
 struct OnboardingView: View {
+    
+    private let fruits: [Fruit] = fruitsData
+    
     var body: some View {
         
         TabView {
-            ForEach(0..<5) { item in
-                FruitCardView(name: "Blueberry",
-                              imageName: "blueberry",
-                              headline: "Blueberries are sweet, nutritious and wildly popular fruit all over the world.",
-                              backgroundColors: [Color("ColorBlueberryLight"), Color("ColorBlueberryDark")])
+            ForEach(fruits) { item in
+                FruitCardView(fruit: item)
             }
             .padding(.horizontal, 20)
         }
